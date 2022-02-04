@@ -21,19 +21,23 @@
       <button  id="btn-saludo" " class="btn1">Bienvenida</button>
     </div>
     <br>
-    <br>
     <main>
-    <form>
-      <img src="images-logo\model.card (1).png" class="modelcard" rel="card.png">
-      <div id="validacioncard" class="visible">
-      <h3>Información de Tarjeta</h3>
-      <label for="input">Número de Tarjeta (Obligatorio)</label>
-      <input type="number" id="creditCardNumber" name="numberCard" placeholder="Coloca los 16 dígitos de tu tarjeta" value=""/>
-      <button type="number" id="validCard" class="btn2">Validar Tarjeta</button>
-      <label for="input">Mi Tarjeta</label>
-      <input type="number" id="myCardNumber" name="myCard" value=""/>
-      <button type="number" id="valiCard" class="btn2">Inicio</button>
-    </div>
+    <form action="" id="myForm" class="myForm">
+    <img src="images-logo\model.card (1).png" class="modelcard" rel="card.png">
+      <div id="formulario-tarjeta" class="formulario-tarjeta">
+        <h3>Información de Tarjeta</h3>
+        <label for="inputNumero">Número de Tarjeta (obligatorio)</label>
+        <input type="number" maxlength="16" id="inputNumero" class="inputNumero" placeholder="Coloca los 16 dígitos de tu tarjeta" value=""/>
+        <i class="formulario_valido"</i>
+        <p class="formulario_input_error">*Sólo puede contener los 16 números de tu tarjeta.</p>
+        <button type="number" id="btn-valid" class="btn2">Validar Tarjeta</button>
+      </div>
+      <br>
+      <div id="validCard" class="validCard"
+        <label for="input">Mi Tarjeta</label>
+        <input type="number" id="myCardNumber" name="myCard" value=""/>
+        <button type="number" id="validCard" class="btn2">Inicio</button>
+      </div>
     </form>
     </main>
     <br>
