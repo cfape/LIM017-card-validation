@@ -18,36 +18,29 @@
       <h1>Banca Móvil</h1>
       <h2>Bienvenida a la nueva Banca Móvil CrediMujer</h2>
       <blockquote>"Nos digitalizamos para brindarte el mejor servicio donde te encuentres"</blockquote>
-      <button  id="btn-saludo" " class="btn1">Inicio</button>
+      <button  id="btn-saludo" " class="btn1">Bienvenida</button>
     </div>
     <br>
     <br>
     <main>
-    <section>
-      <img src="images-logo-\model.card (1).png" class="card.cmc" rel="card.png">
+    <form>
+      <img src="images-logo\model.card (1).png" class="modelcard" rel="card.png">
       <div id="validacioncard" class="visible">
-      <h2>Datos de usuaria</h2>
-      <label for="input">Usuaria</label>
-      <input type="text" id="usuario" name="nombre" placeholder="Ingresa aquí tu nombre y apellidos"/>
-      <br>
-      <br>
-      <br>
       <h3>Información de Tarjeta</h3>
-      <label for="input">Número de Tarjeta</label>
-      <input type="text" id="numcard" name="nrocard" placeholder="Coloca los 16 dígitos de tu tarjeta"/>
-      <br>
-      <br>
-      <br>
-      <button type="btn2" id="valicard" " class="btn2">Validar Tarjeta</button>
+      <label for="input">Número de Tarjeta (Obligatorio)</label>
+      <input type="number" id="creditCardNumber" name="numberCard" placeholder="Coloca los 16 dígitos de tu tarjeta" value=""/>
+      <button type="number" id="validCard" class="btn2">Validar Tarjeta</button>
+      <label for="input">Mi Tarjeta</label>
+      <input type="number" id="myCardNumber" name="myCard" value=""/>
+      <button type="number" id="valiCard" class="btn2">Inicio</button>
     </div>
-    </section>
+    </form>
     </main>
-    <br>
     <br>
     <footer>Fomentamos el empoderamiento y autonomía económica de mujeres emprendedoras. <br>
             <br>
             Copyright © 2022 CrediMujer | Movimiento Manuela Ramos.
     </footer>
-    <script src="index.js" type="module"></script>
+    <script type="module" src="index.js"></script>
   </body>
 </html>
