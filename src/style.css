@@ -39,9 +39,12 @@ form {
         width: 400px;
         /* Esquema del formulario */
         padding: 1em;
-        border: 1px solid #CCC;
+        border: 1px solid #7d3c98;
         border-radius: 1em;
 }
+.formulario_input_error {
+        /* Formato de mensaje obligatorio*/
+        font-size: 80%;}
 .modelcard {
         /* Formato de imágen en el formulario de la página */
         display:block;
@@ -54,7 +57,20 @@ input {
         width: 250px;
         min="0";
         max="9";
+        padding: 1em;
+        margin  : 2%;
 }
+button {
+        /* Formato de los botones del formulario */
+        left         : 440px;
+        top          : 360px;
+        padding      : 8px;
+        font         : bold .8em sans-serif;
+        border       : 2px solid #7d3c98;
+        border-radius: 5px;
+        background   : #E6E6FA;
+}
+
 
 
 
