@@ -21,21 +21,39 @@ blockquote {
         font-weight: bold;
         }
 .saludo {
+        /* Centrar bienvenida en la página */
         font-size: var(--18px);
         width: 100%;
         height: 50vh;
         display: grid;
         place-items: center;
-        }
+                }
 .btn1 {
+        /* Centrar botón de bienvenida en la página */
         margin-top: 14px;
         margin-bottom: 30px;
-        }
+                }
+form {
+        /* Centrar el formulario en la página */
+        margin: 0 auto;
+        width: 400px;
+        /* Esquema del formulario */
+        padding: 1em;
+        border: 1px solid #CCC;
+        border-radius: 1em;
+}
 .modelcard {
+        /* Formato de imágen en el formulario de la página */
         display:block;
         margin:auto;
         height: 300px;
-        width: 500px;
+        width: 400px;
+}
+input {
+        /* Formato de los inputs del formulario */
+        width: 250px;
+        min="0";
+        max="9";
 }
 
 

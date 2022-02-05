@@ -3,7 +3,8 @@
 
 //console.log(validator);
 
-let numeroDeTarjeta = document.getElementById("inputNumCard").value;
+const numeroDeTarjeta = document.getElementById("inputNumCard").value;
+
 console.log("inputNumCard");
 
 
