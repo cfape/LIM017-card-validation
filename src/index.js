@@ -3,12 +3,25 @@
 
 //console.log(validator);
 
-const numeroDeTarjeta = [a, b, c, d, e, f, g, h,i, j, k, l, m, n, o, p];
-for (var i = 0; i < numeroDeTarjeta.length; i++) {
-    console.log(numeroDeTarjeta[i]);
-}
-numeroDeTarjeta = document.getElementById("inputNumCard").value;
-console.log("inputNumCard");
+//Obtener número de tarjeta
+let inputNumCard = document.getElementById('inputNumCard');
+let btn2 = document.getElementById('btn2');
+btn2.addEventListener('click', (playbtn);
+
+function playbtn (){
+    let inputNumCard = document.getElementById('inputNumCard');
+        inputNumCard = inputNumCard.value;
+    if (inputNumCard == ''){
+        inputNumCard.innerHTML="";
+    }
+    else(inputNumCard == ""){
+        inputNumCard.innerHTML="Por favor ingresar su número de tarjeta";
+    }
+    /*
+    let verificar = validator.isValid(inputNumCard)
+        console.log(verificar);
+    }
+
 
 
 

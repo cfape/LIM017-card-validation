@@ -56,13 +56,15 @@ input {
         /* Formato de los inputs del formulario */
         width: 250px;
         padding: 1em;
-        margin  : 3%;
+        margin  : 1%;
         padding: 10px;
+        border: 2px solid #7d3c98;
 
 }
 button {
         /* Formato de los botones del formulario */
         left         : 440px;
+        margin  : 2%;
         top          : 360px;
         padding      : 8px;
         font         : bold .8em sans-serif;
