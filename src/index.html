@@ -26,14 +26,15 @@
       <div id="formulario-tarjeta" class="formulario-tarjeta">
         <h3>Información de Tarjeta</h3>
         <label for="inputNumCard">Número de Tarjeta (*obligatorio)</label>
-        <input type="number" id="inputNumCard" placeholder="Coloca los 16 dígitos de tu tarjeta" value=""/>
+        <input type="text" id="inputNumCard" minlength="1" maxlength="16" pattern="[0-9]+"
+        placeholder="Coloca los 16 dígitos de tu tarjeta" value="" required/>
         <i class="formulario_valido"</i>
         <p class="formulario_input_error">*Sólo puede contener los 16 números de tu tarjeta.</p>
-        <button type="number" id="btn2-inputNumCard" class="btn2">Validar Tarjeta</button>
+        <button type="text" id="btn2-inputNumCard" class="btn2">Validar Tarjeta</button>
       </div>
       <div id="validCard" class="validCard"
         <label for="inputMyCard">Mi CrediMujer Card</label>
-        <input type="number" min="0" max="9" id="inputMyCard" value="" autocomplete="myNumberCard" required/>
+        <input type="text" id="inputMyCard" minlength="1"maxlength="16" pattern="[0-9]+" value="" required/>
         <i class="tarjetaValida"</i></i>
         <p class="formulario_input_error">*Sólo puede contener los 16 números de tu tarjeta.</p>
         <button type="number" id="btn3-inputNumCard" class="btn3">Inicio</button>
@@ -45,6 +46,6 @@
             <br>
             Copyright © 2022 CrediMujer | Movimiento Manuela Ramos.
     </footer>
-    <script src="./index.js" type="module"></script>
+    <script src="./index.js" src="./validator.js "module"></script>
   </body>
 </html>

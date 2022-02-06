@@ -55,10 +55,10 @@ form {
 input {
         /* Formato de los inputs del formulario */
         width: 250px;
-        min="0";
-        max="9";
         padding: 1em;
-        margin  : 2%;
+        margin  : 3%;
+        padding: 10px;
+
 }
 button {
         /* Formato de los botones del formulario */
