@@ -1,46 +1,64 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap"
+      rel="stylesheet"
+    />
     <title>Banca Móvil Credimujer</title>
-    <link rel="shortcut icon" href="favicon.png">
+    <link rel="shortcut icon" href="favicon.png" />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div id="welcome" class="saludo">
-      <img src="https://www-kiva-org-0.freetls.fastly.net/img/h120/3e50da0c577b2f2982f935de413a7f85.jpg" class="logo" rel="img.logo">
+      <img
+        src="https://www-kiva-org-0.freetls.fastly.net/img/h120/3e50da0c577b2f2982f935de413a7f85.jpg"
+        class="logo"
+        rel="img.logo"
+      />
       <h1>Banca Móvil</h1>
       <h2>Bienvenida a la nueva Banca Móvil CrediMujer</h2>
-      <blockquote>"Nos digitalizamos para brindarte el mejor servicio donde te encuentres"</blockquote>
-      <button  id="btn1">Bienvenida</button>
+      <blockquote>
+        "Nos digitalizamos para brindarte el mejor servicio donde te encuentres"
+      </blockquote>
+      <button id="btn1">Bienvenida</button>
     </div>
     <main>
-    <form action="" method="POST" id="myForm" name="formulario">
-    <img src="images-logo\model.card (1).png" class="modelcard" rel="card.png">
-      <div id="formulario-tarjeta" class="formulario-tarjeta">
-        <h3>Información de Tarjeta</h3>
-        <label for="inputNumCard">Número de Tarjeta (*obligatorio)</label>
-        <input type="text" id="inputNumCard" minlength="1" maxlength="16"
-        placeholder="Coloca los 16 dígitos de tu tarjeta" value="" required/>
-        <button type="text" id="btn2">Validar Tarjeta</button>
-      </div>
-      <div id="validCard" class="validCard"
-        <label for="inputMyCard">Mi CrediMujer Card</label>
-        <input type="text" id="inputMyCard" minlength="1"maxlength="16" value="" required/>
-        <button type="number" id="btn3" >Inicio</button>
-      </div>
-    </form>
+      <form method="POST" id="myForm" name="formulario">
+        <img
+          src="images-logo\model.card (1).png"
+          class="modelcard"
+          rel="card.png"
+        />
+        <div id="formulario-tarjeta" class="formulario-tarjeta">
+          <h3>Información de Tarjeta</h3>
+          <label for="numberCard">Mi CrediMujer Card (*obligatorio)</label>
+          <input
+            type="number"
+            id="numberCard"
+            placeholder="Coloca los 16 dígitos de tu tarjeta"
+            maxlength = "16"
+            oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+            required
+          />
+          <button type="text" id="btn2">Validar Tarjeta</button>
+        </div>
+      </form>
     </main>
-    <br>
-    <footer>Fomentamos el empoderamiento y autonomía económica de mujeres emprendedoras. <br>
-            <br>
-            Copyright © 2022 CrediMujer | Movimiento Manuela Ramos.
+    <br />
+    <footer>
+      Fomentamos el empoderamiento y autonomía económica de mujeres
+      emprendedoras. <br />
+      <br />
+      Copyright © 2022 CrediMujer | Movimiento Manuela Ramos.
     </footer>
-    <script src=./index.js src=./validator.js type"module"></script>
+
+    <script src="index.js" type="module"></script>
+    <script src="validator.js" type="module"></script>
   </body>
 </html>
