@@ -1,17 +1,20 @@
-//Comando para validator
+import validator from './validator.js';
 
-import validator from "validator.js";
-//Llamando al DOM
-let buttonNumberCard = document.getElementById('btn');
-//Captura valores del input
-buttonNumberCard.addEventListener('click',buttonValidCard);
+let validButton = document.getElementById('validButton');
+validButton.addEventListener('click', () => {
 
-function buttonValidCard() {
-    let creditCardNumber = document.getElementById('numberCard').value;
-    validator.isValid(creditCardNumber);
-}
+//console.log(numberCard);
+});
 
-//console.log(validator);
+console.log (validator);
+
+
+
+
+
+
+
+
 
 
 

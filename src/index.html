@@ -11,33 +11,35 @@
       rel="stylesheet"
     />
     <title>Banca Móvil Credimujer</title>
-    <link rel="shortcut icon" href="favicon.png" />
+    <link rel="shortcut icon" href="images-logo\faviconsf.png" />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div id="welcome" class="saludo">
-      <img
-        src="https://www-kiva-org-0.freetls.fastly.net/img/h120/3e50da0c577b2f2982f935de413a7f85.jpg"
-        class="logo"
-        rel="img.logo"
-      />
+    <section id="juntas">
+        <img src="images-logo\logo_mr.png" class="logomr"/>
+        <img src="images-logo\credimujersf.png" class="logocr"/>
+        <img src="images-logo\juntaspo.png" class="juntas"/>
+    </section>
+    <section class="saludo">
+      <nav class="menu">
+        <ul>
+          <li><a href="#">Sobre nosotras</a></li>
+          <li><a href="#"></a>Productos y Servicios</li>
+          <li><a href="#">Educación Financiera</a></li>
+          <li><a href="#">Canales de Atención</a></li>
+        </ul>
+      </nav>
       <h1>Banca Móvil</h1>
       <h2>Bienvenida a la nueva Banca Móvil CrediMujer</h2>
-      <blockquote>
-        "Nos digitalizamos para brindarte el mejor servicio donde te encuentres"
-      </blockquote>
-      <button id="btn1">Bienvenida</button>
-    </div>
+      <blockquote>"Nos digitalizamos para brindarte el mejor servicio donde te encuentres"</blockquote>
+      <img src="images-logo\foto1.jpg" class="photo"/>
+    <br>
+    </section>
     <main>
-      <form method="POST" id="myForm" name="formulario">
-        <img
-          src="images-logo\model.card (1).png"
-          class="modelcard"
-          rel="card.png"
-        />
-        <div id="formulario-tarjeta" class="formulario-tarjeta">
+        <section class="formulario">
+          <img src="images-logo\model.card (1).png" class="modelcard"/>
           <h3>Información de Tarjeta</h3>
-          <label for="numberCard">Mi CrediMujer Card (*obligatorio)</label>
+          <label for="numberCard">Ingrese su número de tarjeta (*obligatorio)</label>
           <input
             type="number"
             id="numberCard"
@@ -46,19 +48,18 @@
             oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
             required
           />
-          <button type="text" id="btn2">Validar Tarjeta</button>
-        </div>
-      </form>
+          <button type="text" id="validButton">Validar Tarjeta</button>
+        </section>
+        <section id="results">
+          <p> id="results"</p>
+          <!--button type="text" id="finalButton">Bienvenida</!--button-->
+        </section>
     </main>
-    <br />
     <footer>
-      Fomentamos el empoderamiento y autonomía económica de mujeres
-      emprendedoras. <br />
-      <br />
-      Copyright © 2022 CrediMujer | Movimiento Manuela Ramos.
+    Fomentamos el empoderamiento y autonomía económica de mujeres
+    emprendedoras.
+    Copyright © 2022 CrediMujer | Movimiento Manuela Ramos.
     </footer>
-
     <script src="index.js" type="module"></script>
-    <script src="validator.js" type="module"></script>
   </body>
 </html>
