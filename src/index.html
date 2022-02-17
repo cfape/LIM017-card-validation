@@ -41,19 +41,19 @@
           <h3>Información de Tarjeta</h3>
           <label for="numberCard">Ingrese su número de tarjeta (*obligatorio)</label>
           <input
-            type="number"
-            id="numberCard"
+            type="text"
+            id="cardNumber"
             placeholder="Coloca los 16 dígitos de tu tarjeta"
             maxlength = "16"
-            oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
             required
           />
           <button type="text" id="validButton">Validar Tarjeta</button>
         </section>
-        <section id="results">
-          <p> id="results"</p>
+        <div id="divResults">
+          <p id="mensaje"></p>
+          <p id="result"></p>
+        </div>
           <!--button type="text" id="finalButton">Bienvenida</!--button-->
-        </section>
     </main>
     <footer>
     Fomentamos el empoderamiento y autonomía económica de mujeres
