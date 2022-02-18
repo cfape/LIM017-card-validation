@@ -93,11 +93,11 @@ h3      {
 section.formulario    {
         /* Centrar el formulario en la página */
         float: right;
-        margin-right: 23em;
+        margin-right: 24em;
         height: 475px;
         width: 400px;
         /* Esquema del formulario */
-        padding: 1em;
+        padding: 0.5em;
         border: 2px solid #7d3c98;
         border-radius: 1em;
         margin-top: -17em;
@@ -113,7 +113,7 @@ section.formulario    {
         display: inline-block;
         font:    bold .8em sans-serif;
         }
-#divResults
+#result , p
         {
         display: none;
         }

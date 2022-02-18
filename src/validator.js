@@ -1,32 +1,45 @@
 //Objeto validator contiene 2 funciones
 const validator = {
     isValid: function(creditCardNumber) {
-        let array1 = creditCardNumber.split("");
-        //console.log(array1);
-        let reverseArray = array1.reverse();
-        //console.log(reverseArray);
-        let array2 = [];
-        for (let i = 0; i < reverseArray.length; i++) {
-            console.log(i+1);
-            if ((i+1) %2 === 0){              //posición par
-                let parMulti = reverseArray[i+1]*2;
-                if (parMulti >= 10) {
-                let numNew = parMulti - 9;
-                array2.push(numNew);
-                } else {
-                array2.push(parMulti);
-                }
-            } else {                           //posición impar
-                let imparNum = reverseArray[i]
-                array2.push(imparNum);
-            }
+    //Convertir número de tarjeta a Array
+    let initialArray = Array.from(creditCardNumber);
+    //console.log(initialArray);
+    //Convertir los string del array a números
+    let newArray = [];
+    for (let i = 0; i < initialArray.length;i++){
+    newArray.push(parseInt(initialArray[i]))
+    }
+    //console.log(newArray);
+    //Inverir los dígitos del array a
+    let reverseArray = newArray.reverse();
+    //console.log(reverseArray);
+    //Encontrar los dígitos de posición "par"
+    for (let i= 0; i < reverseArray.length-1; i++){
+        if ((i+1) %2 !== 0){
+    //Multiplicar por 2 los dígitos de posición "par"
+        reverseArray[i+1]= reverseArray[i+1]*2;
+    //Si el producto es mayor que 10, sumar las cifras
+        if(reverseArray[i+1]>=10){
+        reverseArray[i+1]=reverseArray[i+1]-9;
+    }}}
+    //console.log(reverseArray);
+    let sumDigits = 0;
+    for (let i=0; i<reverseArray.length; i++){
+        sumDigits = sumDigits + reverseArray[i];
+    }
+    if (sumDigits % 10 == 0){
+        console.log('valido');
+        return true;
+    }
+    else {
+        console.log('invalido');
+        return false;
         }
-        //console.log(array2);
-        return creditCardNumber;
     },
+
     maskify: function(creditCardNumber) {
+
     return creditCardNumber;
 }
 }
-//}
 export default validator;
