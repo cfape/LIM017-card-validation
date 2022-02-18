@@ -28,17 +28,17 @@ const validator = {
         sumDigits = sumDigits + reverseArray[i];
     }
     if (sumDigits % 10 == 0){
-        console.log('valido');
+        console.log('Número de tarjeta Válida');
         return true;
     }
     else {
-        console.log('invalido');
+        console.log('Número de tarjeta inválida');
         return false;
         }
     },
 
     maskify: function(creditCardNumber) {
-
+        
     return creditCardNumber;
 }
 }
