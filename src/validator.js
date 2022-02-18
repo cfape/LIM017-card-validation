@@ -38,7 +38,7 @@ const validator = {
     },
 
     maskify: function(creditCardNumber) {
-        
+    
     return creditCardNumber;
 }
 }

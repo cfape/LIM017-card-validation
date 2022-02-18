@@ -12,7 +12,7 @@ let cardNumber = document.getElementById('cardNumber').value;
 
     let message = document.getElementById('mensaje');
     if (creditCardNumber === "") {
-        message.innerText = '*Por favor ingrese sólo los números de la tarjeta.';
+        message.innerText = '*Por favor ingrese sólo los números de tu tarjeta.';
         message.classList.add('error-text');
     } else {
         validator.isValid(creditCardNumber);
