@@ -38,8 +38,11 @@ const validator = {
     },
 
     maskify: function(creditCardNumber) {
+    //Mostrar los 4 últimos digitos de la tarjeta.
+    //let maskifyCero = Array.from(creditCardNumber);
+    //console.log(maskifyCero);
     
     return creditCardNumber;
 }
-}
+};
 export default validator;
