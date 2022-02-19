@@ -28,21 +28,23 @@ const validator = {
         sumDigits = sumDigits + reverseArray[i];
     }
     if (sumDigits % 10 == 0){
-        console.log('Número de tarjeta Válida');
+        //console.log('Número de Tarjeta Válida')
         return true;
     }
     else {
-        console.log('Número de tarjeta inválida');
+        //console.log('Número de tarjeta inválida');
         return false;
         }
+
+//return creditCardNumber
     },
 
     maskify: function(creditCardNumber) {
-    //Mostrar los 4 últimos digitos de la tarjeta.
-    //let maskifyCero = Array.from(creditCardNumber);
-    //console.log(maskifyCero);
-    
-    return creditCardNumber;
+
+    let numbersCard = Array.from(creditCardNumber);
+    let numberString = numbersCard.split(',');
+    console.log(numberString);
+    //return creditCardNumber
 }
 };
 export default validator;

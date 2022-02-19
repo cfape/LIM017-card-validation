@@ -91,10 +91,9 @@ h3      {
 section.formulario    {
         /* Centrar el formulario en la página */
         float: right;
-        margin-right: 23em;
-        margin-right: 24em;
+        margin-right: 30em;
         height: 475px;
-        width: 400px;
+        width: 380px;
         /* Esquema del formulario */
         padding: 1em;
         padding: 0.5em;
@@ -102,15 +101,23 @@ section.formulario    {
         border-radius: 1em;
         margin-top: -17em;
         }
-#result , p
-        {
-        display: none;
+#mensaje ,p {
+        display: inline-block;
+        }
+#validMessage , p {
+        display: inline-block;
+                }
+.error-text {
+        color: #fc0101;
+        }
+.valid-text {
+        color: #7D3C98;
         }
 .photo {
         float: right;
         margin-right: 32em;
-        height: 504px;
-        width: 700px;
+        height: 490px;
+        width: 600px;
         margin-top: 0.5em;
         border-radius: 1em;
         border:2px solid #7D3C98;
@@ -120,7 +127,7 @@ section.formulario    {
         display:block;
         margin:auto;
         height: 320px;
-        width: 400px;
+        width: 380px;
         }
 label   {
         font : bold .8em sans-serif;
@@ -153,5 +160,5 @@ footer {
         background-color: #7d3c98;
         color: #FFFFFF;
         text-align: center;
-        margin-top: 19em;
+        margin-top: 21em;
         }
