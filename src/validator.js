@@ -5,13 +5,13 @@ const validator = {
     let initialArray = Array.from(creditCardNumber);
     //console.log(initialArray);
     //Convertir los string del array a números
-    let newArray = [];
+    let finalArray = [];
     for (let i = 0; i < initialArray.length;i++){
-    newArray.push(parseInt(initialArray[i]))
+    finalArray.push(parseInt(initialArray[i]))
     }
     //console.log(newArray);
     //Inverir los dígitos del array a
-    let reverseArray = newArray.reverse();
+    let reverseArray = finalArray.reverse();
     //console.log(reverseArray);
     //Encontrar los dígitos de posición "par"
     for (let i= 0; i < reverseArray.length-1; i++){
@@ -29,22 +29,28 @@ const validator = {
     }
     if (sumDigits % 10 == 0){
         //console.log('Número de Tarjeta Válida')
-        return true;
+        return true ;
     }
     else {
         //console.log('Número de tarjeta inválida');
-        return false;
+        return false ;
         }
-
-//return creditCardNumber
+    //return creditCardNumber;
     },
 
     maskify: function(creditCardNumber) {
-
-    let numbersCard = Array.from(creditCardNumber);
-    let numberString = numbersCard.split(',');
-    console.log(numberString);
-    //return creditCardNumber
+    let cardHide = Array.from(creditCardNumber);
+    let hideNum = [];
+	for(let i = 0; i < cardHide.length; i++){
+    if(i < cardHide.length-4){
+      hideNum.push('#');
+    }else{
+      hideNum.push(cardHide[i]);
+    }
+  }
+  return hideNum.join("");
 }
-};
+
+}
+
 export default validator;
