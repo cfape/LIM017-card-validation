@@ -35,22 +35,18 @@ const validator = {
         //console.log('Número de tarjeta inválida');
         return false ;
         }
-    //return creditCardNumber;
     },
 
     maskify: function(creditCardNumber) {
-    let cardHide = Array.from(creditCardNumber);
     let hideNum = [];
-	for(let i = 0; i < cardHide.length; i++){
-    if(i < cardHide.length-4){
-      hideNum.push('#');
-    }else{
-      hideNum.push(cardHide[i]);
-    }
-  }
-  return hideNum.join("");
+        for (let i = 0; i < creditCardNumber.length; i++){
+        if (i < creditCardNumber.length - 4){
+            hideNum.push('#');
+        } else {
+            hideNum.push(creditCardNumber[i]);
+        }
+        }
+        return hideNum.join('');
+        }
 }
-
-}
-
 export default validator;

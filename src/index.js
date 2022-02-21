@@ -10,17 +10,19 @@ let creditCardNumber = document.getElementById('cardNumber').value;
     if (isNaN(creditCardNumber)) {
         return false;
     }
-    let finalArray = validator.isValid(creditCardNumber).value;
     let message = document.getElementById('message1');
+    let finalArray = validator.isValid(creditCardNumber).value;
+    let hideNum = validator.maskify(creditCardNumber).value;
+    console.log(hideNum);
         if (creditCardNumber){
-        //let hiddenCard = validator.maskify(cardNumber);
+        //
     }
         if (finalArray){
-            message.innerText === true;
+            message.innerText = true;
             message.innerText = 'Número de tarjeta válido.';
             message.classList.add('valid-text');
         }   else {
-            message.innerText === false;
+            message.innerText = '';
             message.innerText = 'Número de tarjeta no válido. Por favor intente nuevamente.';
             message.classList.add('error-text');
             message.classList.remove('innerText');
