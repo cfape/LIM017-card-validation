@@ -35,8 +35,17 @@
       <img src="images-logo\foto1.jpg" class="photo"/>
     </section>
         <section class="formulario">
-          <img src="images-logo\model.card (1).png" class="modelcard"/>
+          <img src="images-logo\card.vacio.png" class="modelcard"/>
           <h3>Información de Tarjeta</h3>
+          <label for="usuari">Nombres y Apellidos</label>
+          <input
+          type="text"
+          id="name"
+          class="name-user"
+          maxlength="30"
+          placeholder="Coloca tu nombre y apellidos"
+          />
+          <br>
           <label for="numberCard">Ingrese su número de tarjeta (*obligatorio)</label>
           <input
             type="text"
@@ -46,9 +55,8 @@
             required = ""
           />
           <button type="text" id="validButton">Validar Tarjeta</button>
-          <p id="message1"></p>
-          <p id="message2"></p>
-          <!--<p id="result"></p>-->
+          <p id="messageNum"></p>
+          <p id="messageText"></p>
         </section>
           <!--button type="text" id="finalButton">Bienvenida</!--button-->
     <footer>

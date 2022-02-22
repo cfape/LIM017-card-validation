@@ -5,13 +5,13 @@ const validator = {
     let initialArray = Array.from(creditCardNumber);
     //console.log(initialArray);
     //Convertir los string del array a números
-    let finalArray = [];
+    let validationResult = [];
     for (let i = 0; i < initialArray.length;i++){
-    finalArray.push(parseInt(initialArray[i]))
+    validationResult.push(parseInt(initialArray[i]))
     }
-    //console.log(newArray);
+    //console.log(validationResult);
     //Inverir los dígitos del array a
-    let reverseArray = finalArray.reverse();
+    let reverseArray = validationResult.reverse();
     //console.log(reverseArray);
     //Encontrar los dígitos de posición "par"
     for (let i= 0; i < reverseArray.length-1; i++){
@@ -33,8 +33,10 @@ const validator = {
     }
     else {
         //console.log('Número de tarjeta inválida');
+        console.log(typeof validationResult);
         return false ;
         }
+       
     },
 
     maskify: function(creditCardNumber) {

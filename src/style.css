@@ -92,32 +92,40 @@ section.formulario    {
         /* Centrar el formulario en la página */
         float: right;
         margin-right: 30em;
-        height: 475px;
+        height: 570px;
         width: 380px;
         /* Esquema del formulario */
         padding: 1em;
-        padding: 0.5em;
+        padding: 0.7em;
         border: 2px solid #7d3c98;
         border-radius: 1em;
-        margin-top: -17em;
+        margin-top: -18em;
         }
-#mensaje ,p {
-        display: inline-block;
+#messageNum ,p {
+        display: block;
+        font-weight: bold;
+        margin-top: -14em;
+        font-size: 22px;
         }
-#validMessage , p {
+#messageText , p {
         display: inline-block;
+        font-weight: bold;
                 }
 .error-text {
         color: #fc0101;
+        margin-top:16em;
+        font-size: 16px;
         }
 .valid-text {
-        color: #7D3C98;
+        color: #f39c12;
+        margin-top: 15.5em;
+        font-size: 19px;
         }
 .photo {
         float: right;
         margin-right: 32em;
-        height: 490px;
-        width: 600px;
+        height: 590px;
+        width: 630px;
         margin-top: 0.5em;
         border-radius: 1em;
         border:2px solid #7D3C98;
@@ -126,6 +134,7 @@ section.formulario    {
         /* Formato de imágen en el formulario de la página */
         display:block;
         margin:auto;
+        border-radius: 0.5em;
         height: 320px;
         width: 380px;
         }
@@ -137,17 +146,18 @@ label   {
 input   {
         /* Formato de los inputs del formulario */
         width: 250px;
-        padding: 1em;
+        padding: 0.8em;
         margin  : 0.5%;
         border: 2px solid #7d3c98;
         border-radius: 5px;
-        margin-top: 0.4em;
+        margin-top: 0.3em;
+        font-weight: bold;
         }
 button  {
         /* Formato de los botones del formulario */
         left         : 440px;
-        margin       : 1%;
-        margin-top:     1.5%;
+        margin       : 0.5%;
+        margin-top:     1%;
         padding      : 8px;
         font         : bold .8em sans-serif;
         border       : 2px solid #7d3c98;
@@ -160,5 +170,5 @@ footer {
         background-color: #7d3c98;
         color: #FFFFFF;
         text-align: center;
-        margin-top: 21em;
+        margin-top: 24em;
         }
