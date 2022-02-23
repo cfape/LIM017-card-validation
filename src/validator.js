@@ -28,27 +28,26 @@ const validator = {
         sumDigits = sumDigits + reverseArray[i];
     }
     if (sumDigits % 10 == 0){
-        //console.log('Número de Tarjeta Válida')
+        console.log('Número de Tarjeta Válida')
         return true ;
-    }
-    else {
-        //console.log('Número de tarjeta inválida');
-        console.log(typeof validationResult);
+    } else {
+        console.log('Número de tarjeta inválida');
+        //console.log(typeof validationResult);
         return false ;
         }
-       
     },
-
     maskify: function(creditCardNumber) {
     let hideNum = [];
         for (let i = 0; i < creditCardNumber.length; i++){
         if (i < creditCardNumber.length - 4){
             hideNum.push('#');
+        //if (i == 3 || i == 7 || i == 11) hideNum.push('-') {
         } else {
             hideNum.push(creditCardNumber[i]);
-        }
+            }
         }
         return hideNum.join('');
         }
-}
+    }
+
 export default validator;
