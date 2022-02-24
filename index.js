@@ -1,6 +1,6 @@
 import validator from './validator.js';
 
-    function playClick(){
+function playClick(){
     let creditCardNumber = document.getElementById('cardNumber').value;
     if (isNaN(creditCardNumber)) {
         return false;
@@ -9,11 +9,11 @@ import validator from './validator.js';
     //for (let i = 0; i < creditCardNumber.length; i++){
     //if (i == 3 || i == 7 || i == 11) hideNum.push("-");
     //}
-    console.log(hideNum);
+    //console.log(hideNum);
     let dataName = document.getElementById('partner').value;
     document.getElementById('messagePartner').innerHTML = dataName;
     let validationResult = validator.isValid(creditCardNumber);
-    console.log(validationResult);
+    //console.log(validationResult);
 
     let messageNum = document.getElementById('messageNum');
     if (validationResult){

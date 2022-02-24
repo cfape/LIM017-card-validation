@@ -11,7 +11,9 @@
         --md: 16px;
         --lg: 18px;
         }
-body {font-family: 'Quicksand', sans-serif;}
+body    {
+        font-family: 'Quicksand', sans-serif;
+        }
 nav a {
         text-decoration:none;
         color:inherit;
@@ -25,7 +27,7 @@ nav ul {list-style-type: none;
 nav li  {
         width: 454px;
         padding: 10px;
-        background-color:#7D3C98;
+        background-color: var(--darkpurple);
         border:1px solid #7D3C98;
         text-align:center;
         color:#FFFFFF;

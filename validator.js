@@ -22,10 +22,10 @@ const validator = {
         sumDigits = sumDigits + reverseArray[i];
     }
     if (sumDigits % 10 == 0){
-        console.log('Número de Tarjeta Válida')
+        //console.log('Número de Tarjeta Válida')
         return true ;
     } else {
-        console.log('Número de tarjeta inválida');
+        //console.log('Número de tarjeta inválida');
         return false ;
         }
     },
