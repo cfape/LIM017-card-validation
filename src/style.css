@@ -1,3 +1,4 @@
+@media screen and (min-width: 1000px)  {
 :root   {
         --white: #FFFFFF;
         --darkpurple: #7D3C98;
@@ -11,7 +12,9 @@
         --md: 16px;
         --lg: 18px;
         }
-body {font-family: 'Quicksand', sans-serif;}
+body    {
+        font-family: 'Quicksand', sans-serif;
+        }
 nav a {
         text-decoration:none;
         color:inherit;
@@ -23,9 +26,9 @@ nav ul {list-style-type: none;
         display: flex;
         }
 nav li  {
-        width: 454px;
+        width: 22vw;
         padding: 10px;
-        background-color:#7D3C98;
+        background-color: var(--darkpurple);
         border:1px solid #7D3C98;
         text-align:center;
         color:#FFFFFF;
@@ -67,7 +70,7 @@ blockquote {
         height: 30px;
         width: 150px;
         margin-top: 0.1em;
-        margin-left: 46em;
+        margin-left: 28em;
         }
 .saludo {
         /* Centrar bienvenida en la página */
@@ -91,7 +94,7 @@ h3      {
 section.formulario    {
         /* Centrar el formulario en la página */
         float: right;
-        margin-right: 15em;
+        margin-right: 2em;
         height: 570px;
         width: 380px;
         /* Esquema del formulario */
@@ -99,7 +102,7 @@ section.formulario    {
         padding: 0.7em;
         border: 2px solid #7d3c98;
         border-radius: 1em;
-        margin-top: -21em;
+        margin-top: -11em;
         }
 #messagePartner, p {
         display: block;
@@ -136,7 +139,7 @@ section.formulario    {
         float: right;
         margin-right: 30em;
         height: 592px;
-        width: 1010px;
+        width: auto;
         margin-top: 0.5em;
         border-radius: 1em;
         border:2px solid #7D3C98;
@@ -176,10 +179,13 @@ button  {
         background   : #E6E6FA;
         }
 footer {
+        width : 100%;
         font-size:15px;
         padding: 10px;
         background-color: #7d3c98;
         color: #FFFFFF;
         text-align: center;
-        margin-top: 24em;
+        margin-top: 30em;
+        margin-left: -0.5em;
         }
+}
